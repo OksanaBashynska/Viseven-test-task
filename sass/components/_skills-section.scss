@@ -1,0 +1,39 @@
+.skills-section {
+  padding-top: 50px;
+  padding-bottom: 28px;
+
+  &__title {
+    @extend %page-titles;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item::before {
+    display: block;
+    margin-bottom: 30px;
+    content: "";
+    height: 120px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__item--photoshop::before {
+    background-image: url(../img/adobe-photoshop.svg);
+  }
+
+  &__item--illustrator::before {
+    background-image: url(../img/adobe-illustrator.svg);
+  }
+
+  &__item--effects::before {
+    background-image: url(../img/adobe-after-effects.svg);
+  }
+
+  &__item--figma::before {
+    background-image: url(../img/figma.svg);
+  }
+}

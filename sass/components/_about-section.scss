@@ -1,0 +1,28 @@
+.about-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: getColor("secondary-background");
+
+  &__title {
+    @extend %page-titles;
+    margin-bottom: 46px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__text-wrapper {
+    margin-left: 44px;
+    margin-right: 20px;
+    padding-top: 115px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

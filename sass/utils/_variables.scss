@@ -1,0 +1,32 @@
+$colors: (
+  "primary": #000000,
+  "secondary": #828282,
+  "main-background": #ffffff,
+  "secondary-background": #f4f4f4,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts: (
+  "bold": 700,
+  "base-size": 18px,
+  "title-size": 34px,
+  "main-title-size": 47px,
+  "subtitle-size": 14px,
+  "base-line-height": 1.17,
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}
+
+$geometry: (
+  "section-padding": 94px,
+  "base-radius": 4px,
+);
+
+@function getGeometry($key) {
+  @return map-get($geometry, $key);
+}

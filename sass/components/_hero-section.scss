@@ -1,0 +1,24 @@
+.hero-section {
+  padding-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    font-size: getFont("main-title-size");
+  }
+
+  &__details {
+    text-align: end;
+
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__image {
+    display: block;
+  }
+}

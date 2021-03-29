@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: getFont("bold");
+  font-size: getFont("base-size");
+  line-height: getFont("base-line-height");
+  letter-spacing: 0.03em;
+  color: getColor("primary");
+
+  background-color: getColor("main-background");
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 975px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  display: block;
+  margin: 0;
+
+  text-decoration: none;
+  color: getColor("primary");
+}
+
+p {
+  margin: 0;
+}

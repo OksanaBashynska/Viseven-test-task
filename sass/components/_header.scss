@@ -1,0 +1,28 @@
+.page-header {
+  padding-top: 45px;
+  padding-bottom: 35px;
+
+  &__nav-container {
+    height: 50px;
+
+    border-bottom: 1px solid #828282;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    padding-bottom: 35px;
+
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: getColor("secondary");
+    &--current {
+      color: getColor("primary");
+    }
+  }
+}
