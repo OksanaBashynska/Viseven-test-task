@@ -5,7 +5,7 @@
   &__nav-container {
     height: 50px;
 
-    border-bottom: 1px solid #828282;
+    border-bottom: 1px solid getColor("secondary");
   }
 
   &__list {

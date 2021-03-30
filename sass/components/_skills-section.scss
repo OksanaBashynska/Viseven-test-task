@@ -4,6 +4,7 @@
 
   &__title {
     @extend %page-titles;
+    margin-bottom: 50px;
   }
 
   &__list {
@@ -11,29 +12,48 @@
     justify-content: space-between;
   }
 
-  &__item::before {
+  &__item {
+    text-align: center;
+  }
+
+  &__icon {
+    width: 90.97px;
+    height: 87.86px;
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    font-size: getFont("subtitle-size");
+    color: getColor("secondary");
+  }
+
+  &__item::after {
     display: block;
-    margin-bottom: 30px;
+    margin-top: 41px;
     content: "";
-    height: 120px;
-    width: 100%;
+    height: 25.8px;
+    width: 170px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &__item--photoshop::before {
-    background-image: url(../img/adobe-photoshop.svg);
+  &__item:last-child::after {
+    margin-top: 56px;
   }
 
-  &__item--illustrator::before {
-    background-image: url(../img/adobe-illustrator.svg);
+  &__item--photoshop::after {
+    background-image: url(../img/stars-group1.svg);
   }
 
-  &__item--effects::before {
-    background-image: url(../img/adobe-after-effects.svg);
+  &__item--illustrator::after {
+    background-image: url(../img/stars-group2.svg);
   }
 
-  &__item--figma::before {
-    background-image: url(../img/figma.svg);
+  &__item--effects::after {
+    background-image: url(../img/stars-group1.svg);
+  }
+
+  &__item--figma::after {
+    background-image: url(../img/stars-group3.svg);
   }
 }

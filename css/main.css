@@ -265,7 +265,7 @@ summary {
   display: list-item;
 }
 
-.about-section__title, .skills-section__title {
+.about-section__title, .skills-section__title, .portfolio-section__title, .footer__title {
   font-size: 34px;
   text-align: center;
 }
@@ -341,6 +341,28 @@ a {
 
 p {
   margin: 0;
+}
+
+.icon-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-transition: background-color 500ms linear, -webkit-transform 500ms ease-in-out;
+  transition: background-color 500ms linear, -webkit-transform 500ms ease-in-out;
+  transition: background-color 500ms linear, transform 500ms ease-in-out;
+  transition: background-color 500ms linear, transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.icon-up:hover {
+  background-color: #828282;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
 }
 
 .page-header {
@@ -441,6 +463,10 @@ p {
   padding-bottom: 28px;
 }
 
+.skills-section__title {
+  margin-bottom: 50px;
+}
+
 .skills-section__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,29 +476,102 @@ p {
           justify-content: space-between;
 }
 
-.skills-section__item::before {
+.skills-section__item {
+  text-align: center;
+}
+
+.skills-section__icon {
+  width: 90.97px;
+  height: 87.86px;
+  margin-bottom: 22px;
+}
+
+.skills-section__text {
+  font-size: 14px;
+  color: #828282;
+}
+
+.skills-section__item::after {
   display: block;
-  margin-bottom: 30px;
+  margin-top: 41px;
   content: "";
-  height: 120px;
-  width: 100%;
+  height: 25.8px;
+  width: 170px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.skills-section__item--photoshop::before {
-  background-image: url(../img/adobe-photoshop.svg);
+.skills-section__item:last-child::after {
+  margin-top: 56px;
 }
 
-.skills-section__item--illustrator::before {
-  background-image: url(../img/adobe-illustrator.svg);
+.skills-section__item--photoshop::after {
+  background-image: url(../img/stars-group1.svg);
 }
 
-.skills-section__item--effects::before {
-  background-image: url(../img/adobe-after-effects.svg);
+.skills-section__item--illustrator::after {
+  background-image: url(../img/stars-group2.svg);
 }
 
-.skills-section__item--figma::before {
-  background-image: url(../img/figma.svg);
+.skills-section__item--effects::after {
+  background-image: url(../img/stars-group1.svg);
+}
+
+.skills-section__item--figma::after {
+  background-image: url(../img/stars-group3.svg);
+}
+
+.portfolio-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.portfolio-section__title {
+  margin-bottom: 50px;
+}
+
+.portfolio-section__list {
+  text-align: center;
+}
+
+.portfolio-section__item {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.portfolio-section__item:not(:last-child) {
+  margin-bottom: 86px;
+}
+
+.portfolio-section__image {
+  margin-bottom: 40px;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 60px;
+}
+
+.footer__title {
+  margin-bottom: 37px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 60.96px;
+}
+
+.footer__media-icon {
+  width: 38.86px;
+  height: 39.1px;
 }
 /*# sourceMappingURL=main.css.map */

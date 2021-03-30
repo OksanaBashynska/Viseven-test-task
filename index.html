@@ -63,20 +63,24 @@
           <h2 class="skills-section__title" id="skills">Skills</h2>
           <ul class="skills-section__list">
             <li class="skills-section__item skills-section__item--photoshop">
-              <p>Adobe Photoshop</p>
-             <!--  <svg><use href=""></use></svg> -->
+              <svg class="skills-section__icon"><use href="./img/sosial-media.svg#icon-adobe-photoshop"></use></svg> 
+              <p class="skills-section__text">Adobe<br/>Photoshop</p>
+             
             </li>
             <li class="skills-section__item skills-section__item--illustrator">
-              <p>Adobe Illustrator</p>
-              <!-- <svg><use href=""></use></svg> -->
+              <svg class="skills-section__icon"><use href="./img/sosial-media.svg#icon-adobe-illustrator"></use></svg>
+              <p class="skills-section__text">Adobe<br/>Illustrator</p>
+             
             </li>
             <li class="skills-section__item skills-section__item--effects">
-              <p>Adobe After Effects</p>
-              <!-- <svg><use href=""></use></svg> -->
+              <svg class="skills-section__icon"><use href="./img/sosial-media.svg#icon-adobe-after-effects"></use></svg>
+              <p class="skills-section__text">Adobe<br/>After Effects</p>
+              
             </li>
             <li class="skills-section__item skills-section__item--figma">
-              <p>Figma</p>
-             <!--  <svg><use href=""></use></svg> -->
+              <svg class="skills-section__icon"><use href="./img/sosial-media.svg#icon-figma"></use></svg>
+              <p class="skills-section__text">Figma</p>
+             
             </li>
           </ul>
         </div>
@@ -84,43 +88,69 @@
 
        <section class="portfolio-section">
         <div class="container">
-          <h2 id="portfolio">Portfolio</h2>
-         <ul>
-             <li><img src="./img/portfolio-section-sneakers.jpg" alt="Online fashion store webpage screenshot"></img><a href="">Online fashion store - Homepage</a></li>
-             <li><img src="./img/portfolio-section-helias.jpg" alt="Helias Store webpage screenshot"></img><a href="">Helias Store - Concept</a></li>
-             <li><img src="./img/portfolio-section-hoang-nguen.jpg" alt="Hoang Nguen Landing Page screenshot"></img><a href="">Hoang Nguen Landing Page - Concept</a></li>
+          <h2 class="portfolio-section__title" id="portfolio">Portfolio</h2>
+         <ul class="portfolio-section__list">
+             <li class="portfolio-section__item">
+                <img 
+                  class="portfolio-section__image"
+                  src="./img/portfolio-section-sneakers.jpg" 
+                  alt="Online fashion store webpage screenshot"
+                  srcset="./img/portfolio-section-sneakers2x.jpg 2x">
+               </img>
+               <a href="">Online fashion store - Homepage</a>
+            </li>
+             <li class="portfolio-section__item">
+               <img 
+                 class="portfolio-section__image"
+                 src="./img/portfolio-section-helias.jpg" 
+                 alt="Helias Store webpage screenshot"
+                 srcset="./img/portfolio-section-helias2x.jpg 2x">
+                </img>
+                <a href="">Helias Store - Concept</a>
+              </li>
+             <li class="portfolio-section__item">
+               <img
+                 class="portfolio-section__image" 
+                 src="./img/portfolio-section-hoang-nguen.jpg" 
+                 alt="Hoang Nguen Landing Page screenshot"
+                 srcset="./img/portfolio-section-hoang-nguen2x.jpg 2x">
+                </img>
+                <a href="">Hoang Nguen Landing Page - Concept</a>
+              </li>
          </ul>
         </div>
       </section>
+      <button type="button"></button>
+      <a class="icon-up" href="#top"> <img src="./img/icon-up.svg"> </a>
     </main>
 
-    <footer>
-         <h2 id="contacts">Contacts</h2>
-         <ul>
-             <li>
+    <footer class="footer">
+         <h2 class="footer__title" id="contacts">Contacts</h2>
+         <ul class="footer__list">
+             <li class="footer__item">
                  <a href="">
-                     <svg>
+                     <svg class="footer__media-icon">
                          <use href="./img/sosial-media.svg#icon-linkedin"></use>
                      </svg>
                  </a>
              </li>
-             <li>
+             <li class="footer__item">
                  <a href="">
-                     <svg>
+                     <svg class="footer__media-icon">
                          <use href="./img/sosial-media.svg#icon-instagram"></use>
                      </svg>
                  </a>
              </li>
-             <li>
+             <li class="footer__item">
                  <a href="">
-                     <svg>
+                     <svg class="footer__media-icon">
                          <use href="./img/sosial-media.svg#icon-behance"></use>
                      </svg>
                  </a>
              </li>
-             <li>
+             <li class="footer__item">
                  <a href="">
-                     <svg>
+                     <svg class="footer__media-icon">
                          <use href="./img/sosial-media.svg#icon-dribbble"></use>
                      </svg>
                  </a>

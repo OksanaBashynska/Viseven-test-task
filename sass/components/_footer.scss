@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 72px;
+  padding-bottom: 60px;
+
+  &__title {
+    @extend %page-titles;
+    margin-bottom: 37px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 60.96px;
+  }
+
+  &__media-icon {
+    width: 38.86px;
+    height: 39.1px;
+  }
+}
